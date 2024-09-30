@@ -8,6 +8,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace livraria_appex
 {
@@ -17,6 +18,21 @@ namespace livraria_appex
         {
             InitializeComponent();
         }
+
+        //Estabelecer conexao com banco de dados sql server
+        SqlConnection cn = new SqlConnection(@"Persist Security Info=True;User ID=senac;Password=senac;
+Initial Catalog=db_livraria;Server=TAU0588426W10-1;Encrypt=False;");
+
+        
+
+
+
+//(autenticção windows) @"Data Source=TAU0588426W10-1;intergrated security=SSPI;initial Catalog=db_livraria"); // servidor = TAU0588426W10-1
+
+        SqlCommand cm = new SqlCommand();
+
+        SqlDataReader dt;
+
 
         private void btn_close_Click(object sender, EventArgs e)
         {
@@ -53,7 +69,13 @@ namespace livraria_appex
             {
                 try//Tentar
                 {
-                    if (tbx_name.Text == "admin" || tbx_password.Text == "12345")
+                    cn.Open();
+                    cm.CommandText= "select * from tbl_Atendente01 where ds_Login= ('"+tbx_name.Text+"') and ds_Senha= ('"+tbx_password.Text+"') and ds_status = 1";
+                    cm.Connection = cn;
+                    dt = cm.ExecuteReader();
+
+
+                    if (dt.HasRows)
                     {
                      Formmenu menu = new Formmenu();
                      menu.Show();
@@ -72,11 +94,13 @@ namespace livraria_appex
                 catch(Exception erro)//Pegar
                 {
                     MessageBox.Show(erro.Message);
-                    this.Close();
+                    cn.Close();
                 }
                 finally
                 {
-                    //this.Close();
+                   cn.Close();
+
+                   //old->this.Close();
                 }
             }
         }

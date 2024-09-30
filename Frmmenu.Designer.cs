@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Formmenu));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lbl_logo_menu = new System.Windows.Forms.Label();
             this.btn_caixa = new System.Windows.Forms.Button();
             this.btn_pedido = new System.Windows.Forms.Button();
             this.btn_autores = new System.Windows.Forms.Button();
@@ -39,11 +40,10 @@
             this.bnt_telefone = new System.Windows.Forms.Button();
             this.btn_cliente = new System.Windows.Forms.Button();
             this.btn_funcionario = new System.Windows.Forms.Button();
-            this.iniciarControl1 = new livraria_appex.iniciarControl();
-            this.employeeControl1 = new livraria_appex.employeeControl();
-            this.clientControl1 = new livraria_appex.clientControl();
             this.clientControl2 = new livraria_appex.clientControl();
-            this.lbl_logo_menu = new System.Windows.Forms.Label();
+            this.clientControl1 = new livraria_appex.clientControl();
+            this.employeeControl1 = new livraria_appex.employeeControl();
+            this.iniciarControl1 = new livraria_appex.iniciarControl();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -64,6 +64,19 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(234, 448);
             this.panel1.TabIndex = 0;
+            // 
+            // lbl_logo_menu
+            // 
+            this.lbl_logo_menu.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_logo_menu.BackColor = System.Drawing.Color.DarkBlue;
+            this.lbl_logo_menu.Font = new System.Drawing.Font("MV Boli", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_logo_menu.ForeColor = System.Drawing.Color.Beige;
+            this.lbl_logo_menu.Location = new System.Drawing.Point(0, 0);
+            this.lbl_logo_menu.Name = "lbl_logo_menu";
+            this.lbl_logo_menu.Size = new System.Drawing.Size(234, 73);
+            this.lbl_logo_menu.TabIndex = 9;
+            this.lbl_logo_menu.Text = "Bockstore Management System";
+            this.lbl_logo_menu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btn_caixa
             // 
@@ -175,19 +188,13 @@
             this.btn_funcionario.UseVisualStyleBackColor = false;
             this.btn_funcionario.Click += new System.EventHandler(this.btn_funcionario_Click);
             // 
-            // iniciarControl1
+            // clientControl2
             // 
-            this.iniciarControl1.Location = new System.Drawing.Point(237, 1);
-            this.iniciarControl1.Name = "iniciarControl1";
-            this.iniciarControl1.Size = new System.Drawing.Size(564, 448);
-            this.iniciarControl1.TabIndex = 1;
-            // 
-            // employeeControl1
-            // 
-            this.employeeControl1.Location = new System.Drawing.Point(237, 1);
-            this.employeeControl1.Name = "employeeControl1";
-            this.employeeControl1.Size = new System.Drawing.Size(564, 448);
-            this.employeeControl1.TabIndex = 2;
+            this.clientControl2.BackColor = System.Drawing.Color.Beige;
+            this.clientControl2.Location = new System.Drawing.Point(366, 94);
+            this.clientControl2.Name = "clientControl2";
+            this.clientControl2.Size = new System.Drawing.Size(8, 8);
+            this.clientControl2.TabIndex = 4;
             // 
             // clientControl1
             // 
@@ -198,25 +205,21 @@
             this.clientControl1.TabIndex = 3;
             this.clientControl1.Load += new System.EventHandler(this.clientControl1_Load);
             // 
-            // clientControl2
+            // employeeControl1
             // 
-            this.clientControl2.Location = new System.Drawing.Point(366, 94);
-            this.clientControl2.Name = "clientControl2";
-            this.clientControl2.Size = new System.Drawing.Size(8, 8);
-            this.clientControl2.TabIndex = 4;
+            this.employeeControl1.BackColor = System.Drawing.Color.Beige;
+            this.employeeControl1.Location = new System.Drawing.Point(237, 1);
+            this.employeeControl1.Name = "employeeControl1";
+            this.employeeControl1.Size = new System.Drawing.Size(564, 448);
+            this.employeeControl1.TabIndex = 2;
             // 
-            // lbl_logo_menu
+            // iniciarControl1
             // 
-            this.lbl_logo_menu.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lbl_logo_menu.BackColor = System.Drawing.Color.DarkBlue;
-            this.lbl_logo_menu.Font = new System.Drawing.Font("MV Boli", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_logo_menu.ForeColor = System.Drawing.Color.Beige;
-            this.lbl_logo_menu.Location = new System.Drawing.Point(0, 0);
-            this.lbl_logo_menu.Name = "lbl_logo_menu";
-            this.lbl_logo_menu.Size = new System.Drawing.Size(234, 73);
-            this.lbl_logo_menu.TabIndex = 9;
-            this.lbl_logo_menu.Text = "Bockstore Management System";
-            this.lbl_logo_menu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.iniciarControl1.BackColor = System.Drawing.Color.Beige;
+            this.iniciarControl1.Location = new System.Drawing.Point(237, 1);
+            this.iniciarControl1.Name = "iniciarControl1";
+            this.iniciarControl1.Size = new System.Drawing.Size(564, 448);
+            this.iniciarControl1.TabIndex = 1;
             // 
             // Formmenu
             // 

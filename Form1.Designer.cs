@@ -43,6 +43,8 @@
             this.pnl_password = new System.Windows.Forms.Panel();
             this.tbx_password = new System.Windows.Forms.TextBox();
             this.btn_close = new System.Windows.Forms.Button();
+            this.lbl_saldar4 = new System.Windows.Forms.Label();
+            this.lbl_saldar5 = new System.Windows.Forms.Label();
             this.pnl_left.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbx_imagem)).BeginInit();
             this.pnl_right.SuspendLayout();
@@ -54,8 +56,10 @@
             // 
             // pnl_left
             // 
-            this.pnl_left.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.pnl_left.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(158)))), ((int)(((byte)(149)))));
             this.pnl_left.Controls.Add(this.lbl_saldar3);
+            this.pnl_left.Controls.Add(this.lbl_saldar5);
+            this.pnl_left.Controls.Add(this.lbl_saldar4);
             this.pnl_left.Controls.Add(this.lbl_saldar2);
             this.pnl_left.Controls.Add(this.lbl_saldar1);
             this.pnl_left.Controls.Add(this.pbx_imagem);
@@ -68,22 +72,22 @@
             // lbl_saldar3
             // 
             this.lbl_saldar3.AutoSize = true;
-            this.lbl_saldar3.BackColor = System.Drawing.Color.Beige;
+            this.lbl_saldar3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(110)))), ((int)(((byte)(68)))));
             this.lbl_saldar3.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_saldar3.ForeColor = System.Drawing.Color.DarkBlue;
+            this.lbl_saldar3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(140)))), ((int)(((byte)(40)))));
             this.lbl_saldar3.Location = new System.Drawing.Point(21, 370);
             this.lbl_saldar3.Name = "lbl_saldar3";
-            this.lbl_saldar3.Size = new System.Drawing.Size(113, 25);
+            this.lbl_saldar3.Size = new System.Drawing.Size(143, 25);
             this.lbl_saldar3.TabIndex = 3;
-            this.lbl_saldar3.Text = "de livros    ";
+            this.lbl_saldar3.Text = "de  livros        ";
             this.lbl_saldar3.Click += new System.EventHandler(this.lbl_saldar3_Click);
             // 
             // lbl_saldar2
             // 
             this.lbl_saldar2.AutoSize = true;
-            this.lbl_saldar2.BackColor = System.Drawing.Color.Beige;
+            this.lbl_saldar2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(110)))), ((int)(((byte)(68)))));
             this.lbl_saldar2.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_saldar2.ForeColor = System.Drawing.Color.DarkBlue;
+            this.lbl_saldar2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(140)))), ((int)(((byte)(40)))));
             this.lbl_saldar2.Location = new System.Drawing.Point(21, 345);
             this.lbl_saldar2.Name = "lbl_saldar2";
             this.lbl_saldar2.Size = new System.Drawing.Size(198, 25);
@@ -93,9 +97,9 @@
             // lbl_saldar1
             // 
             this.lbl_saldar1.AutoSize = true;
-            this.lbl_saldar1.BackColor = System.Drawing.Color.Beige;
+            this.lbl_saldar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(110)))), ((int)(((byte)(68)))));
             this.lbl_saldar1.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_saldar1.ForeColor = System.Drawing.Color.DarkBlue;
+            this.lbl_saldar1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(140)))), ((int)(((byte)(40)))));
             this.lbl_saldar1.Location = new System.Drawing.Point(21, 320);
             this.lbl_saldar1.Name = "lbl_saldar1";
             this.lbl_saldar1.Size = new System.Drawing.Size(198, 25);
@@ -104,17 +108,18 @@
             // 
             // pbx_imagem
             // 
-            this.pbx_imagem.Image = global::livraria_appex.Properties.Resources.ex_bliblioteca2;
-            this.pbx_imagem.Location = new System.Drawing.Point(26, 12);
+            this.pbx_imagem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.pbx_imagem.Image = global::livraria_appex.Properties.Resources.BSL;
+            this.pbx_imagem.Location = new System.Drawing.Point(0, 0);
             this.pbx_imagem.Name = "pbx_imagem";
-            this.pbx_imagem.Size = new System.Drawing.Size(251, 276);
+            this.pbx_imagem.Size = new System.Drawing.Size(300, 294);
             this.pbx_imagem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbx_imagem.TabIndex = 0;
             this.pbx_imagem.TabStop = false;
             // 
             // pnl_right
             // 
-            this.pnl_right.BackColor = System.Drawing.Color.Beige;
+            this.pnl_right.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(158)))), ((int)(((byte)(149)))));
             this.pnl_right.Controls.Add(this.btn_acessar);
             this.pnl_right.Controls.Add(this.lbl_login);
             this.pnl_right.Controls.Add(this.pbx_password);
@@ -129,10 +134,14 @@
             // 
             // btn_acessar
             // 
-            this.btn_acessar.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btn_acessar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(110)))), ((int)(((byte)(68)))));
+            this.btn_acessar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_acessar.FlatAppearance.BorderSize = 0;
+            this.btn_acessar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_acessar.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_acessar.ForeColor = System.Drawing.Color.DarkBlue;
+            this.btn_acessar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(140)))), ((int)(((byte)(40)))));
             this.btn_acessar.Location = new System.Drawing.Point(96, 269);
+            this.btn_acessar.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
             this.btn_acessar.Name = "btn_acessar";
             this.btn_acessar.Size = new System.Drawing.Size(260, 50);
             this.btn_acessar.TabIndex = 4;
@@ -143,18 +152,19 @@
             // lbl_login
             // 
             this.lbl_login.AutoSize = true;
-            this.lbl_login.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.lbl_login.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_login.ForeColor = System.Drawing.Color.DarkBlue;
+            this.lbl_login.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(110)))), ((int)(((byte)(68)))));
+            this.lbl_login.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.lbl_login.Font = new System.Drawing.Font("MingLiU-ExtB", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_login.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(140)))), ((int)(((byte)(40)))));
             this.lbl_login.Location = new System.Drawing.Point(50, 81);
             this.lbl_login.Name = "lbl_login";
-            this.lbl_login.Size = new System.Drawing.Size(163, 26);
+            this.lbl_login.Size = new System.Drawing.Size(185, 19);
             this.lbl_login.TabIndex = 3;
             this.lbl_login.Text = "Faça seu Login :";
             // 
             // pbx_password
             // 
-            this.pbx_password.BackColor = System.Drawing.Color.Ivory;
+            this.pbx_password.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(158)))), ((int)(((byte)(149)))));
             this.pbx_password.Image = global::livraria_appex.Properties.Resources.cadeado_trancado;
             this.pbx_password.Location = new System.Drawing.Point(3, 201);
             this.pbx_password.Name = "pbx_password";
@@ -167,7 +177,7 @@
             // 
             // pnl_name
             // 
-            this.pnl_name.BackColor = System.Drawing.Color.Ivory;
+            this.pnl_name.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(158)))), ((int)(((byte)(149)))));
             this.pnl_name.Controls.Add(this.tbx_name);
             this.pnl_name.Controls.Add(this.pbx_name);
             this.pnl_name.Location = new System.Drawing.Point(0, 131);
@@ -178,6 +188,7 @@
             // tbx_name
             // 
             this.tbx_name.Location = new System.Drawing.Point(55, 17);
+            this.tbx_name.MaxLength = 20;
             this.tbx_name.Name = "tbx_name";
             this.tbx_name.Size = new System.Drawing.Size(200, 20);
             this.tbx_name.TabIndex = 1;
@@ -194,7 +205,7 @@
             // 
             // pnl_password
             // 
-            this.pnl_password.BackColor = System.Drawing.Color.Ivory;
+            this.pnl_password.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(158)))), ((int)(((byte)(149)))));
             this.pnl_password.Controls.Add(this.tbx_password);
             this.pnl_password.Location = new System.Drawing.Point(0, 201);
             this.pnl_password.Name = "pnl_password";
@@ -204,6 +215,7 @@
             // tbx_password
             // 
             this.tbx_password.Location = new System.Drawing.Point(55, 17);
+            this.tbx_password.MaxLength = 8;
             this.tbx_password.Name = "tbx_password";
             this.tbx_password.Size = new System.Drawing.Size(200, 20);
             this.tbx_password.TabIndex = 2;
@@ -212,11 +224,11 @@
             // 
             // btn_close
             // 
-            this.btn_close.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btn_close.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(110)))), ((int)(((byte)(68)))));
             this.btn_close.FlatAppearance.BorderSize = 0;
             this.btn_close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_close.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_close.ForeColor = System.Drawing.Color.DarkBlue;
+            this.btn_close.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(140)))), ((int)(((byte)(40)))));
             this.btn_close.Location = new System.Drawing.Point(467, 3);
             this.btn_close.Name = "btn_close";
             this.btn_close.Size = new System.Drawing.Size(30, 30);
@@ -224,6 +236,29 @@
             this.btn_close.Text = "X";
             this.btn_close.UseVisualStyleBackColor = false;
             this.btn_close.Click += new System.EventHandler(this.btn_close_Click);
+            // 
+            // lbl_saldar4
+            // 
+            this.lbl_saldar4.AutoSize = true;
+            this.lbl_saldar4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(110)))), ((int)(((byte)(68)))));
+            this.lbl_saldar4.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_saldar4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(140)))), ((int)(((byte)(40)))));
+            this.lbl_saldar4.Location = new System.Drawing.Point(21, 370);
+            this.lbl_saldar4.Name = "lbl_saldar4";
+            this.lbl_saldar4.Size = new System.Drawing.Size(0, 25);
+            this.lbl_saldar4.TabIndex = 4;
+            // 
+            // lbl_saldar5
+            // 
+            this.lbl_saldar5.AutoSize = true;
+            this.lbl_saldar5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(110)))), ((int)(((byte)(68)))));
+            this.lbl_saldar5.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_saldar5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(110)))), ((int)(((byte)(68)))));
+            this.lbl_saldar5.Location = new System.Drawing.Point(21, 370);
+            this.lbl_saldar5.Name = "lbl_saldar5";
+            this.lbl_saldar5.Size = new System.Drawing.Size(198, 25);
+            this.lbl_saldar5.TabIndex = 5;
+            this.lbl_saldar5.Text = "sistema gerenciador";
             // 
             // Login
             // 
@@ -268,6 +303,8 @@
         private System.Windows.Forms.TextBox tbx_password;
         private System.Windows.Forms.PictureBox pbx_password;
         private System.Windows.Forms.Button btn_acessar;
+        private System.Windows.Forms.Label lbl_saldar5;
+        private System.Windows.Forms.Label lbl_saldar4;
     }
 }
 
