@@ -124,6 +124,10 @@ Initial Catalog=db_livraria;Server=TAU0588426W10-1;Encrypt=False;");
                 MessageBox.Show("Obrigatorio ter no mínimo 8 caracteres", "Senha", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 tbx_senha_employe.Focus();
             }
+            else if (rbtn_inativo_employe.Checked)
+            {
+                MessageBox.Show("Impossivel gravar um funcionario se o STATUS estiver INATIVO", "erro na operação", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
             else
             {
                 try
@@ -134,7 +138,7 @@ Initial Catalog=db_livraria;Server=TAU0588426W10-1;Encrypt=False;");
                     string login = tbx_login_employe.Text;
                     string senha = tbx_senha_employe.Text;
 
-                    string strSql = "insert into tbl_atendente01(ds_Login,ds_Senha,mn_atendente)vaules(@login,@senha,@nome)";
+                    string strSql = "insert into tbl_atendente01(ds_Login,ds_Senha,mn_atendente,ds_status)vaules(@login,@senha,@atendente,1)"; //@nome
 
                     cm.CommandText = strSql;
                     cm.Connection = cn;
@@ -335,6 +339,10 @@ Initial Catalog=db_livraria;Server=TAU0588426W10-1;Encrypt=False;");
                 MessageBox.Show("Obrigatório ter no mínimo 8 caracteres", "Senha", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 tbx_senha_employe.Focus();
             }
+            else if (rbtn_inativo_employe.Checked)
+            {
+                MessageBox.Show("Para inativar um funcionario é presciso clicar no botão remover", "erro na operação", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
             else
             {
                 try
@@ -344,7 +352,7 @@ Initial Catalog=db_livraria;Server=TAU0588426W10-1;Encrypt=False;");
                     string senha = tbx_senha_employe.Text;
                     int cd = Convert.ToInt32(lbl_cod_zu.Text);
 
-                    string strSql = "update tbl_atendente1 set ds_login=@login, ds_senha=@senha, nm_atendente=@nome where cd_atendente=@cd";
+                    string strSql = "update tbl_atendente1 set ds_login=@login, ds_senha=@senha, nm_atendente=@nome , ds_status=1 where cd_atendente=@cd";
 
                     cm.CommandText = strSql;
                     cm.Connection = cn;
